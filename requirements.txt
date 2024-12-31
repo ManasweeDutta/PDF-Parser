@@ -1,0 +1,8 @@
+streamlit
+PyPDF2
+langchain-core
+langchain-text-splitters
+langchain-community
+langchain-groq
+chroma
+huggingface-hub
