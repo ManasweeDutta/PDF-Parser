@@ -1,7 +1,6 @@
 import os
 import PyPDF2
 import streamlit as st
-from secret_api_key import GROQ_API_KEY
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
@@ -39,7 +38,7 @@ if uploaded_file:
     chunks = text_splitter.split_documents(documents)
 
     # Set up API key
-    os.environ['GROQ_API_KEY'] = GROQ_API_KEY
+    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
     # Initialize embeddings
     embeddings = HuggingFaceEmbeddings(
