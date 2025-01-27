@@ -92,7 +92,7 @@ if uploaded_file:
     )
 
     # User input for query
-    query = st.text_input("Enter your question:", "What is a monopoly?")
+    query = st.text_input("Enter your question:", "How may I help you?")
 
     if st.button("Get Answer"):
         # Invoke the chain
