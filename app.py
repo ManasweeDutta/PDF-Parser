@@ -12,7 +12,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 
 # Streamlit App
-st.title("PDF Document Question-Answering with LangChain")
+st.title("Cart Mapper")
 
 # File uploader
 uploaded_file = st.file_uploader("Upload a PDF file", type="pdf")
